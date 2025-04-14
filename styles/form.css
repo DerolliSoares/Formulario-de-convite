@@ -1,0 +1,35 @@
+fieldset {
+    border: none;
+    display: grid;
+    gap: 1rem;
+}
+
+.sobre {
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+    margin-top: 2.625rem;
+    margin-bottom: 2.25rem;
+
+    h2 {
+        font: var(--heading-sm);
+        color: var(--text-heading);
+    }
+}
+
+.flex {
+   display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(7.5rem, 1fr));
+    gap: 1rem;
+}
+
+.label {
+
+        font: var(--body-sm);
+        color: var(--text-body);
+}
+
+.gap-75 {
+    display: grid;
+    gap: .75rem;    
+}

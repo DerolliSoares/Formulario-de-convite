@@ -1,0 +1,30 @@
+textarea {
+    position: relative;
+    
+    &:invalid {
+        border: 1px solid var(--danger);
+    }
+
+    &:invalid + .error {
+        display: flex;
+        align-items: center;
+        gap: .25rem;
+
+        font: var(--body-xs);
+        color: var(--danger);
+    }
+    
+    &:not(:focus) {
+        outline: 1px solid var(--input-stroke);
+        border-radius: .5rem;
+        border: 1px solid transparent;
+
+        & + .error {
+        display: none;
+        }
+    }
+
+    &:valid + .error {
+        display: none;
+    }
+}   
