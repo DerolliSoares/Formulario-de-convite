@@ -1,13 +1,21 @@
 #site {
     display: grid;
-    grid-template-columns: 25% 75%;
+    grid-template-columns: 32.78% 67.22%;
     overflow: hidden;
     height: 100vh;
 }
 
 aside {
     background-image: url(../assets/Background.png) ;
-    background-size: cover;
+    background-size: 100% 100%;
+    
+    span{
+        background-image: url(../assets/ícons/Logo.svg);
+        background-size:2.865rem 3rem;
+        width: 2.865rem;
+        height: 3rem;
+    }
+    
 }
 
 main {
@@ -16,8 +24,8 @@ main {
 }
 
 .main-width {
-    width: 58.75rem;
-    margin-left: 8.125rem;
+    width: 35rem;
+    margin-left: 16.097rem;
 }
 
 .festivite {
@@ -26,7 +34,7 @@ main {
     gap: 1rem;
 
     img {
-        width: 2.865rem;
+        width: 2rem;
         height: 3rem;
         object-fit: cover;
     }
