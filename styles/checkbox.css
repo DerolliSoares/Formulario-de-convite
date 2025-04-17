@@ -1,0 +1,74 @@
+
+.switch-container input {
+    margin-top: 1.25rem;
+
+    opacity: 100;
+    display: block;
+    position: relative;
+    width: 4rem;
+    height: 2rem;
+    cursor: pointer;
+    border-radius: 62.437rem; 
+    transition: backgroud .3s;
+
+
+    &:has(:checked) {
+        label {
+            visibility: hidden;
+        }
+    }
+}
+
+.switch-container input::after {
+    content: '';
+    display: block;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 50%;
+    background-color: var(--input-stroke);
+    transition: left .3s;
+    top: 50%;
+    left: 24%;
+}
+
+.switch-container input::before {
+    content: 'Escuro';
+    position: absolute;
+    
+    font: var(--body-sm);
+    color: var(--text-body);
+
+    left: 4.75rem;
+    bottom: 20%;
+}
+
+.switch-container input:focus{
+    outline: 1px solid var(--input-stroke);
+    border: 1px solid transparent;
+}
+
+.switch-container input:checked {
+    background-color: var(--brand-light);
+}
+
+.switch-container input:checked::after {
+    left: 76%;
+    background-color: var(--text-heading);
+} 
+
+.switch-container input:checked::before {
+    content: 'Claro';
+    position: absolute;
+    
+    font: var(--body-sm);
+    color: var(--text-body);
+
+    left: 4.75rem;
+    bottom: 20%;
+}
+
+
+
+

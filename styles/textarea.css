@@ -1,5 +1,4 @@
 textarea {
-    margin-bottom: .375rem;
     position: relative;
     
     &:invalid {

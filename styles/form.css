@@ -8,8 +8,8 @@ fieldset {
     display: flex;
     align-items: center;
     gap: .75rem;
-    margin-top: 2.625rem;
-    margin-bottom: 2.25rem;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
 
     h2 {
         font: var(--heading-sm);
@@ -29,7 +29,23 @@ fieldset {
         color: var(--text-body);
 }
 
+.label-2 {
+
+    font: var(--body-sm);
+    color: #FFFFFF;
+}
+
 .gap-75 {
     display: grid;
     gap: .75rem;    
+}
+
+.gap-28px {
+    display: grid;
+    gap: 1.75rem;
+}
+
+.gap-1rem {
+    display: grid;
+    gap: 1rem;
 }

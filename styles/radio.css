@@ -8,7 +8,7 @@
     
     outline: 1px solid var(--input-stroke);
     border-radius: .5rem;
-    border: 1px solid transparent;
+    border: 1px  solid transparent;
   }
 
   .control {
@@ -30,6 +30,8 @@
     &:focus-within {
         background-color: var(--shape-button);
         border-radius: .3rem;
+        transition: all 0.5s;
+
 
         & svg path {
             fill:  var(--brand-light);        
@@ -53,25 +55,31 @@
     padding: .75rem 1.125rem;
 }
 
+
+
+
 .colors {
   border-radius: 62.437rem;
   width: 2.5rem;
   height: 2.5rem;
 
-  border: .3rem solid var(--input-stroke);
+  border: .3rem solid var(--shape-button);
 
   &:focus {
-    border: .3rem solid var(--input-stroke);
+    border: .3rem solid var(--shape-button);
     outline: .125rem solid var(--brand-light);
   }
 
+  &:hover {
+    border: .3rem solid var(--shape-hover);
+  }
+
+  
 }
 
 .colors-flex {
-  margin-top: .5rem;
-  margin-bottom: 2rem;
   display: flex;
-  justify-content:space-between ;
+  justify-content: space-between;
 }
 
 #blue {
@@ -118,3 +126,64 @@
   background-color: var(--danger);
 }
     
+
+
+
+.tema-do-evento{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(7.5rem, 1fr));
+  gap: .5rem;
+}
+
+.theme {
+  width: 8.375rem;
+  height: 6.437rem;
+}
+
+.theme-container {
+  position: relative;
+  background-color: var(--shape-button);
+
+  outline: 1px solid var(--input-stroke);
+  border-radius: .5rem;
+  border: 1px 1px solid transparent;
+
+  width: 8.375rem;
+  height: 6.437rem;
+
+  padding-top: .25rem;
+
+  &:has(:checked) {
+    background-color: var(--shape-button);
+    outline: 2px solid var(--brand-light);
+ }
+
+ &:focus-within {
+    background-color: var(--shape-button);
+    outline: 2px solid var(--brand-light);
+}
+
+&:hover {
+  background-color: var(--shape-hover);
+}
+
+}
+
+.theme-container input {
+  opacity: 0;
+  position: absolute;
+  width: 8.375rem;
+  cursor: pointer;
+  height: 100%;  
+}
+
+.theme-items {
+  display: grid;
+  justify-items: center;
+  gap: .5rem;
+
+  span {
+    font: var(--body-sm);
+    color: var(--text-heading);
+  }
+}
