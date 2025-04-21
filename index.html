@@ -499,8 +499,94 @@
                     
                 </fieldset>
 
+                <div class="subtitulo">
+                    <img src="assets/ícons/contact.svg" alt="">
+    
+                    <h2>Dados para contato</h2>
+                </div>
+
+                <fieldset class="dados-para-contato">
+                    <div class="input-wrapper">
+                        <label for="name">Nome</label>
+
+                        <input 
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Nome completo"
+                        class="contato"
+                        required>
+
+                        <div class="obrigatorio">
+                            <img src="assets/ícons/circle-alert-red.svg" alt="">
+
+                            <span>Campo obrigatório</span>
+                        </div>
+                    </div>
+
+                    <div class="flex">
+                        <div class="input-wrapper">
+                            <label for="mail">E-mail</label>
+    
+                            <input 
+                            type="email"
+                            id="mail"
+                            name="mail"
+                            placeholder="exemplo@email.com">
+                        </div>
+    
+                        <div class="input-wrapper">
+                            <label for="telephone">Telefone</label>
+    
+                            <input 
+                            type="tel"
+                            id="telephone"
+                            name="telephone"
+                            placeholder="(99) 99999-9999">
+                        </div>
+                </fieldset>
+
+                <div class="line">
+                </div>
+
+                <fieldset class="footer">
+
+                    <div class="footer-grid">
+                        <div class="footer-checkbox">
+                            <input 
+                            type="checkbox"
+                            id="first-checkbox">
+                            <label for="first-checkbox">Li e concordo com os <span>Termos e Condições</span> e com a <span>Política de Privacidade</span></label>
+                        </div>
+    
+                        <div class="footer-checkbox">
+                            <input 
+                            type="checkbox"
+                            id="second-checkbox">
+                            <label for="second-checkbox">Aceito receber atualizações e promoções por e-mail</label>
+                        </div>
+    
+                        <div class="footer-checkbox">
+                            <input 
+                            type="checkbox"
+                            id="third-checkbox">
+                            <label for="third-checkbox">Aceito receber atualizações e promoções por SMS</label>
+                        </div>
+                    </div>
+
+                    <div>
+                        <button class="button">
+                            <img src="assets/ícons/ticket.svg" alt="">
+
+                            <span>Gerar convite</span>
+                        </button>
+                    </div>
+
+                </fieldset>
             </form>
         </main>
+
+
     </div>
     
 </body>

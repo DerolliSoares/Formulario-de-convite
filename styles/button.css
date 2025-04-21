@@ -1,0 +1,35 @@
+.button {
+    appearance: none;
+    border-radius: .8rem;
+    background-color: var(--brand-dark);
+
+    padding: .875rem 1.25rem;
+
+    margin-left: 23.937rem;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+    
+
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+
+    font: var(--body-md-semibold);
+    color: var(--text-heading);
+
+    outline: none;
+    border: none;
+
+    width: 11.062rem;
+    height: 3rem;
+
+    & img {
+        width: 1.25rem;
+        height: 1.25rem;
+        object-fit: cover;
+    }
+
+    &:hover {
+        background-color: var(--brand-mid);
+    }
+}

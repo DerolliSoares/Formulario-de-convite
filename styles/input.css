@@ -86,3 +86,32 @@ gap: .75rem;
         background-color: var(--shape-hover);
       }
 }
+
+.contato {
+    &:invalid {
+        border: 1px solid var(--danger);
+    }
+
+    &:invalid + .obrigatorio {
+        display: flex;
+        align-items: center;
+        gap: .25rem;
+
+        font: var(--body-xs);
+        color: var(--danger);
+    }
+    
+    &:focus {
+        outline: 1px solid var(--input-stroke);
+        border-radius: .5rem;
+        border: 1px solid transparent;
+
+        & + .obrigatorio {
+        opacity: 0;
+        }
+    }
+
+    &:valid + .obrigatorio {
+        opacity: 0;
+    }
+}

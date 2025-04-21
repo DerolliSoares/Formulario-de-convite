@@ -51,3 +51,14 @@ main {
         opacity: 80%;
     }
 }
+
+footer {
+    background-color: var(--shape-body);
+    overflow: auto;
+}
+
+.line {
+    margin-top: 3rem;
+    margin-bottom: 2.5rem;
+    border: 1px solid var(--input-stroke);
+}

@@ -20,11 +20,11 @@ textarea {
         border: 1px solid transparent;
 
         & + .error {
-        display: none;
+        opacity: 0;
         }
     }
 
     &:valid + .error {
-        display: none;
+        opacity: 0;
     }
 }   
