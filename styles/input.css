@@ -102,16 +102,16 @@ gap: .75rem;
     }
     
     &:focus {
-        outline: 1px solid var(--input-stroke);
+        outline: 1px solid var(--brand-light);
         border-radius: .5rem;
         border: 1px solid transparent;
 
         & + .obrigatorio {
-        opacity: 0;
+        display: none;
         }
     }
 
     &:valid + .obrigatorio {
-        opacity: 0;
+        display: none;
     }
 }

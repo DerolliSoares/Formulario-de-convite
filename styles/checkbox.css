@@ -3,25 +3,16 @@
     margin-top: 1.25rem;
 
     opacity: 100;
-    display: block;
     position: relative;
     width: 4rem;
     height: 2rem;
     cursor: pointer;
     border-radius: 62.437rem; 
     transition: backgroud .3s;
-
-
-    &:has(:checked) {
-        label {
-            visibility: hidden;
-        }
-    }
 }
 
 .switch-container input::after {
     content: '';
-    display: block;
     position: absolute;
     transform: translate(-50%, -50%);
     height: 1.5rem;
