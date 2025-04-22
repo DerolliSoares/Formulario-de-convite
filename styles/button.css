@@ -3,6 +3,8 @@
     border-radius: .8rem;
     background-color: var(--brand-dark);
 
+    cursor: pointer;
+
     padding: .875rem 1.25rem;
 
     margin-left: 23.937rem;
